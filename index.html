@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dofus Helper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+             fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+              'scale-in-pop': {
+                '0%': {
+                    opacity: '0',
+                    transform: 'scale(0.95)'
+                },
+                '100%': {
+                    opacity: '1',
+                    transform: 'scale(1)'
+                },
+              },
+               'glow': {
+                '0%, 100%': { 
+                  boxShadow: '0 0 5px rgba(251, 191, 36, 0.4), 0 0 10px rgba(251, 191, 36, 0.3)',
+                },
+                '50%': { 
+                  boxShadow: '0 0 15px rgba(251, 191, 36, 0.6), 0 0 20px rgba(251, 191, 36, 0.4)',
+                },
+              }
+            },
+            animation: {
+              'scale-in-pop': 'scale-in-pop 0.3s ease-out forwards',
+              'glow': 'glow 2.5s ease-in-out infinite alternate',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom Scrollbar for Webkit browsers */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e1c3a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a476b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5f5c8b;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#1e1c3a]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

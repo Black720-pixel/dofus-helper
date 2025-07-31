@@ -1,0 +1,6 @@
+{
+  "name": "Dofus Helper",
+  "description": "Une application pour vous aider dans Dofus. Suivez vos ventes via des captures d'écran, consultez une base de données d'objets, et créez des listes de craft avec suivi des ingrédients.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
