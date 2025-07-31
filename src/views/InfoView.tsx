@@ -58,7 +58,7 @@ const InfoView: React.FC = () => {
                         Ajoutez votre clé API en tant que variable d'environnement :
                         <ul className='list-disc list-inside pl-4 mt-2 space-y-1'>
                            <li>Allez dans `Site settings` > `Build & deploy` > `Environment`.</li>
-                           <li>Ajoutez une variable avec la clé <strong className="text-white">`VITE_API_KEY`</strong> et collez votre clé API en valeur. Le préfixe `VITE_` est <strong className="text-red-400">obligatoire</strong> pour que l'application puisse y accéder.</li>
+                           <li>Ajoutez une variable avec la clé <strong className="text-white">`VITE_API_KEY`</strong> et collez votre clé API en valeur. Le préfixe `VITE_` est <strong className="font-bold text-red-400">obligatoire</strong> pour que l'application puisse y accéder.</li>
                         </ul>
                     </li>
                     <li>Cliquez sur "Deploy site". Netlify va maintenant construire votre projet et le mettre en ligne !</li>
